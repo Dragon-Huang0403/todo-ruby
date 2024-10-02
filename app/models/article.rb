@@ -3,7 +3,7 @@ class Article
   include Mongoid::Timestamps
   include Visible
 
-  has_many :comments
+  has_many :comments, dependent: :destroy
 
   field :title, type: String
   field :body, type: String
