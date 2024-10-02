@@ -49,6 +49,6 @@ class ArticlesController < ApplicationController
       puts ">>>> params start"
       puts params
       puts ">>>> params end"
-      params.require(:article).permit(:title, :body)
+      params.require(:article).permit(:title, :body, :status)
     end
 end
